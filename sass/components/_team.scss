@@ -1,0 +1,47 @@
+.team {
+  background-color: $color-grey;
+  margin: 50px auto;
+  padding: 0 100px;
+  padding-top: 50px;
+  &__people {
+    // border: 1px solid red;
+    padding: 75px;
+    display: flex;
+    justify-content: space-around;
+    &--person {
+      //   border: 5px dotted green;
+      img.person {
+        display: flex;
+        margin: auto;
+        border: 5px solid rgb(177, 177, 177);
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+      figcaption {
+        // border: 1px solid red;
+        span {
+          display: block;
+          text-align: center;
+          &.name {
+            margin: 10px 0;
+            font-weight: bolder;
+          }
+          &.post {
+            color: darken($color-grey, 35%);
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &__social {
+        display: flex;
+        justify-content: center;
+        // border: 1px solid red;
+        img {
+          width: 25px;
+          margin: 5px 10px;
+        }
+      }
+    }
+  }
+}

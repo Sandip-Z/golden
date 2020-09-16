@@ -98,7 +98,11 @@ nav {
       padding-top: 0px; }
     .portfolio__projects--project {
       margin: 10px;
-      box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.7); }
+      box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.7);
+      transition: all 0.5s; }
+      .portfolio__projects--project:hover {
+        background-color: #f1c40f;
+        transition: all 0.5s; }
       .portfolio__projects--project img {
         width: 407px;
         height: 304px;
@@ -122,3 +126,35 @@ nav {
             font-style: italic;
             color: #bdc3c7;
             margin-top: 5px; }
+
+.team {
+  background-color: #bdc3c7;
+  margin: 50px auto;
+  padding: 0 100px;
+  padding-top: 50px; }
+  .team__people {
+    padding: 75px;
+    display: flex;
+    justify-content: space-around; }
+    .team__people--person img.person {
+      display: flex;
+      margin: auto;
+      border: 5px solid #b1b1b1;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px; }
+    .team__people--person figcaption span {
+      display: block;
+      text-align: center; }
+      .team__people--person figcaption span.name {
+        margin: 10px 0;
+        font-weight: bolder; }
+      .team__people--person figcaption span.post {
+        color: #606a71;
+        margin-bottom: 10px; }
+    .team__people--person__social {
+      display: flex;
+      justify-content: center; }
+      .team__people--person__social img {
+        width: 25px;
+        margin: 5px 10px; }
