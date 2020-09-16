@@ -3,8 +3,38 @@
   padding: 0; }
 
 header {
-  background-image: url("../../Asset/bg.png");
-  background-size: cover; }
+  position: relative;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(27, 27, 27, 0.9)), url("../../Asset/bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+  header .header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    header .header h2 {
+      color: whitesmoke;
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 10px; }
+    header .header h1 {
+      color: whitesmoke;
+      text-transform: capitalize;
+      font-size: 70px;
+      margin-bottom: 10px; }
+    header .header button {
+      display: flex;
+      margin: auto;
+      background-color: #f1c40f;
+      border: 0px;
+      padding: 15px 30px;
+      transition: all 0.3s; }
+      header .header button:hover {
+        box-shadow: 1px 2px 30px rgba(87, 86, 86, 0.9);
+        transform: translateY(-10%);
+        transition: all 0.3s; }
 
 nav {
   display: flex;
