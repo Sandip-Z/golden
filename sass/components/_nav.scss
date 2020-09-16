@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      padding: 15px;
+      a {
+        text-decoration: none;
+        color: $color-white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
