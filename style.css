@@ -131,7 +131,8 @@ nav {
   background-color: #bdc3c7;
   margin: 50px auto;
   padding: 0 100px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  margin-bottom: 0px; }
   .team__post-script {
     color: #606a71;
     padding: 50px;
@@ -165,3 +166,13 @@ nav {
       .team__people--person__social img {
         width: 25px;
         margin: 5px 10px; }
+
+.market {
+  padding: 25px 100px; }
+  .market__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .market__row--org img {
+      width: 150px !important;
+      filter: grayscale(1); }

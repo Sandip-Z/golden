@@ -1,0 +1,15 @@
+.market {
+  //   background-color: red;
+  padding: 25px 100px;
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &--org {
+      & img {
+        width: 150px !important;
+        filter: grayscale(1);
+      }
+    }
+  }
+}
