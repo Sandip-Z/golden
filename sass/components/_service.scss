@@ -1,15 +1,7 @@
 .service {
   margin: 50px auto;
+  padding: 0 100px;
   //   background-color: rgb(185, 142, 142);
-  &__title {
-    text-align: center;
-    font-size: 35px;
-    text-transform: uppercase;
-  }
-  &__subtitle {
-    text-align: center;
-    font-size: 25px;
-  }
 
   &__services {
     display: flex;

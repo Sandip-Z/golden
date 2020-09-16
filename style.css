@@ -2,6 +2,19 @@
   margin: 0;
   padding: 0; }
 
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+.section__title {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase; }
+
+.section__subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter; }
+
 header {
   position: relative;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(27, 27, 27, 0.9)), url("../../Asset/bg.png");
@@ -51,14 +64,8 @@ nav {
         text-transform: uppercase; }
 
 .service {
-  margin: 50px auto; }
-  .service__title {
-    text-align: center;
-    font-size: 35px;
-    text-transform: uppercase; }
-  .service__subtitle {
-    text-align: center;
-    font-size: 25px; }
+  margin: 50px auto;
+  padding: 0 100px; }
   .service__services {
     display: flex;
     justify-content: space-around; }
@@ -78,3 +85,40 @@ nav {
         color: #bdc3c7;
         margin: auto;
         text-align: center; }
+
+.portfolio {
+  background-color: #bdc3c7;
+  padding: 50px 0; }
+  .portfolio__projects {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 100px 0 100px; }
+    .portfolio__projects:last-child {
+      padding-bottom: 100px;
+      padding-top: 0px; }
+    .portfolio__projects--project {
+      margin: 10px;
+      box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.7); }
+      .portfolio__projects--project img {
+        width: 407px;
+        height: 304px;
+        margin-bottom: 0;
+        transition: all 0.5s; }
+        .portfolio__projects--project img:hover {
+          transform: scaleY(1.05);
+          transition: all 0.5s; }
+      .portfolio__projects--project figcaption {
+        position: relative;
+        top: -5px;
+        background-color: whitesmoke;
+        padding: 25px; }
+        .portfolio__projects--project figcaption span {
+          display: block;
+          text-align: center; }
+          .portfolio__projects--project figcaption span.title {
+            font-weight: bold; }
+          .portfolio__projects--project figcaption span.subtitle {
+            font-weight: lighter;
+            font-style: italic;
+            color: #bdc3c7;
+            margin-top: 5px; }
