@@ -1,9 +1,14 @@
 @import "./abstracts/variables";
 
 @import "./abstracts/base";
+@import "./abstracts/mixins";
+
+@import "./layout/grid";
+
 @import "./components/header";
 @import "./components/nav";
 @import "./components/service";
 @import "./components/portfolio";
 @import "./components/team";
 @import "./components/market";
+@import "./components/contact";

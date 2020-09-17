@@ -15,6 +15,46 @@ body {
   font-size: 18px;
   font-weight: lighter; }
 
+.btn-primary {
+  display: flex;
+  margin: auto;
+  background-color: #f1c40f;
+  border: 0px;
+  padding: 15px 30px;
+  transition: all 0.3s; }
+  .btn-primary:hover {
+    box-shadow: 1px 2px 30px rgba(87, 86, 86, 0.9);
+    transform: translateY(-10%);
+    transition: all 0.3s; }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 60px; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 80px; }
+  .row .col-1-of-1 {
+    width: 100%; }
+  .row .col-1-of-2 {
+    width: calc((100% - 80px) / 2); }
+  .row .col-1-of-3 {
+    width: calc(((100% - 80px * 2) / 3)); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 80px * 2) / 3) + 80px); }
+  .row .col-1-of-4 {
+    width: calc(((100% - 80px * 3) / 4)); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 80px * 3) / 4) + 80px); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 80px * 3) / 4) + 2 * 80px); }
+
 header {
   position: relative;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(27, 27, 27, 0.9)), url("../../Asset/bg.png");
@@ -37,17 +77,6 @@ header {
       text-transform: capitalize;
       font-size: 60px;
       margin-bottom: 10px; }
-    header .header button {
-      display: flex;
-      margin: auto;
-      background-color: #f1c40f;
-      border: 0px;
-      padding: 15px 30px;
-      transition: all 0.3s; }
-      header .header button:hover {
-        box-shadow: 1px 2px 30px rgba(87, 86, 86, 0.9);
-        transform: translateY(-10%);
-        transition: all 0.3s; }
 
 nav {
   display: flex;
@@ -176,3 +205,23 @@ nav {
     .market__row--org img {
       width: 150px !important;
       filter: grayscale(1); }
+
+.contact {
+  background-image: linear-gradient(to right, rgba(10, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../../Asset/globe.jpg");
+  background-size: contain;
+  background-position: center;
+  color: whitesmoke;
+  padding: 100px;
+  padding-top: 50px; }
+  .contact form {
+    margin-top: 50px; }
+    .contact form input,
+    .contact form textarea {
+      padding: 15px;
+      margin: 15px;
+      border-radius: 2px;
+      border: 0;
+      width: 100%; }
+  .contact__button {
+    display: flex;
+    justify-content: center; }
