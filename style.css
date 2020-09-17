@@ -27,6 +27,27 @@ body {
     transform: translateY(-10%);
     transition: all 0.3s; }
 
+.d-flex {
+  display: flex !important; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.align-items-center {
+  align-items: center; }
+
+.justify-content-end {
+  justify-content: end; }
+
+.img-bordered {
+  display: flex;
+  margin: auto;
+  border: 5px solid #d5dde2;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2); }
+
 .row {
   max-width: 1140px;
   margin: 0 auto; }
@@ -111,12 +132,12 @@ nav {
         margin: 15px auto;
         font-size: 18px; }
       .service__services--item p {
-        color: #bdc3c7;
+        color: #d5dde2;
         margin: auto;
         text-align: center; }
 
 .portfolio {
-  background-color: #bdc3c7;
+  background-color: #d5dde2;
   padding: 50px 0; }
   .portfolio__projects {
     display: flex;
@@ -153,17 +174,17 @@ nav {
           .portfolio__projects--project figcaption span.subtitle {
             font-weight: lighter;
             font-style: italic;
-            color: #bdc3c7;
+            color: #d5dde2;
             margin-top: 5px; }
 
 .team {
-  background-color: #bdc3c7;
+  background-color: #d5dde2;
   margin: 50px auto;
   padding: 0 100px;
   padding-top: 50px;
   margin-bottom: 0px; }
   .team__post-script {
-    color: #606a71;
+    color: #6b8899;
     padding: 50px;
     padding-top: 0px;
     padding-bottom: 100px;
@@ -176,10 +197,11 @@ nav {
     .team__people--person img.person {
       display: flex;
       margin: auto;
-      border: 5px solid #b1b1b1;
+      border: 5px solid #d5dde2;
       border-radius: 50%;
       width: 150px;
-      height: 150px; }
+      height: 150px;
+      box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2); }
     .team__people--person figcaption span {
       display: block;
       text-align: center; }
@@ -187,7 +209,7 @@ nav {
         margin: 10px 0;
         font-weight: bolder; }
       .team__people--person figcaption span.post {
-        color: #606a71;
+        color: #6b8899;
         margin-bottom: 10px; }
     .team__people--person__social {
       display: flex;
@@ -225,3 +247,44 @@ nav {
   .contact__button {
     display: flex;
     justify-content: center; }
+
+.aboutus {
+  padding-top: 50px; }
+  .aboutus__stories {
+    margin-top: 100px; }
+  .aboutus__throughline {
+    height: 951px;
+    width: 15px;
+    position: absolute;
+    left: 50%;
+    border-left: 2px solid #d5dde2; }
+  .aboutus__story--description {
+    width: 35%;
+    padding: 50px;
+    padding-top: 15px; }
+    .aboutus__story--description h5 {
+      font-weight: bold;
+      font-size: 22px; }
+    .aboutus__story--description p {
+      padding-top: 15px;
+      color: #a8b8c3; }
+    .aboutus__story--description__empty {
+      height: 185px; }
+      .aboutus__story--description__empty figure {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); }
+        .aboutus__story--description__empty figure p {
+          flex-direction: column;
+          background-color: #f1c40f;
+          align-items: center;
+          justify-content: center;
+          color: whitesmoke; }
+          .aboutus__story--description__empty figure p span {
+            display: inline-block;
+            text-align: center;
+            font-size: 20px; }
+  .aboutus img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }

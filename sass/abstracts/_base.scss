@@ -33,3 +33,29 @@ body {
     transition: all 0.3s;
   }
 }
+
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.img-bordered {
+  display: flex;
+  margin: auto;
+  border: 5px solid $color-grey;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2);
+}
