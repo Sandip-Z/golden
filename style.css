@@ -271,13 +271,16 @@ nav {
   .aboutus__story--description {
     width: 35%;
     padding: 50px;
-    padding-top: 15px; }
+    padding-top: 15px;
+    position: relative;
+    top: -5px;
+    text-align: center; }
     .aboutus__story--description h5 {
       font-weight: bold;
       font-size: 22px; }
     .aboutus__story--description p {
       padding-top: 15px;
-      color: #a8b8c3; }
+      color: goldenrod; }
     .aboutus__story--description__empty {
       height: 185px; }
       .aboutus__story--description__empty figure {

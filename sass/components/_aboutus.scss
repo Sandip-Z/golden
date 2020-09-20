@@ -19,6 +19,9 @@
       width: 35%;
       padding: 50px;
       padding-top: 15px;
+      position: relative;
+      top: -5px;
+      text-align: center;
       h5 {
         font-weight: bold;
         font-size: 22px;
@@ -26,7 +29,7 @@
 
       p {
         padding-top: 15px;
-        color: darken($color-grey, 15%);
+        color: $color-primary-dark;
       }
       &__empty {
         height: 185px;
