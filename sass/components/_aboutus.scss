@@ -30,7 +30,6 @@
       }
       &__empty {
         height: 185px;
-
         figure {
           position: absolute;
           left: 50%;
@@ -41,6 +40,7 @@
             align-items: center;
             justify-content: center;
             color: $color-white;
+            animation: pulse 3s linear infinite;
             span {
               display: inline-block;
               text-align: center;
