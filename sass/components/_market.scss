@@ -5,10 +5,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include respond(phone) {
+      flex-direction: column;
+    }
     &--org {
       & img {
         width: 150px !important;
         filter: grayscale(1);
+        @include respond(phone) {
+          margin: 30px;
+        }
       }
     }
   }

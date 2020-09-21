@@ -314,9 +314,15 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center; }
+    @media (max-width: 37.5em) {
+      .market__row {
+        flex-direction: column; } }
     .market__row--org img {
       width: 150px !important;
       filter: grayscale(1); }
+      @media (max-width: 37.5em) {
+        .market__row--org img {
+          margin: 30px; } }
 
 .contact {
   background-image: linear-gradient(to right, rgba(10, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../../Asset/globe.jpg");
