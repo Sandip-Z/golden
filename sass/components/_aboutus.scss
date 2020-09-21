@@ -7,14 +7,14 @@
   }
 
   &__throughline {
-    height: 951px;
+    height: 1380px;
     width: 15px;
     position: absolute;
     left: 50%;
     border-left: 2px solid $color-grey;
     z-index: 0;
-    @include respond(phone) {
-      height: 2883px;
+    @include respond(tab-port) {
+      height: 4000px;
     }
   }
 
@@ -26,7 +26,7 @@
       position: relative;
       top: -5px;
       text-align: center;
-      @include respond(phone) {
+      @include respond(tab-port) {
         padding-top: 50px;
         width: 100%;
         background-color: #f44336;
@@ -41,7 +41,7 @@
       p {
         padding-top: 15px;
         color: $color-primary-dark;
-        @include respond(phone) {
+        @include respond(tab-port) {
           color: $color-white;
         }
       }
@@ -51,7 +51,7 @@
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
-          @include respond(phone) {
+          @include respond(tab-port) {
             // margin: 50px 0;
           }
           p {
