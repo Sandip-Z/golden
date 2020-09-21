@@ -12,8 +12,9 @@
     position: absolute;
     left: 50%;
     border-left: 2px solid $color-grey;
+    z-index: 0;
     @include respond(phone) {
-      height: 3109px;
+      height: 2883px;
     }
   }
 

@@ -333,10 +333,11 @@ nav {
     width: 15px;
     position: absolute;
     left: 50%;
-    border-left: 2px solid #d5dde2; }
+    border-left: 2px solid #d5dde2;
+    z-index: 0; }
     @media (max-width: 37.5em) {
       .aboutus__throughline {
-        height: 3109px; } }
+        height: 2883px; } }
   .aboutus__story--description {
     width: 35%;
     padding: 50px;
