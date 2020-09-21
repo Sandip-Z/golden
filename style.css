@@ -131,15 +131,15 @@ header {
       text-align: center;
       font-size: 35px;
       margin-bottom: 10px;
-      animation: slideDown 0.5s linear; }
+      animation: slideDown 1s linear; }
     header .header h1 {
       color: whitesmoke;
       text-transform: capitalize;
       font-size: 60px;
       margin-bottom: 10px;
-      animation: fadeIn 1s linear; }
+      animation: fadeIn 3s linear; }
     header .header button {
-      animation: slideIn 0.3s linear; }
+      animation: slideIn 0.5s linear; }
 
 nav {
   display: flex;
@@ -191,7 +191,8 @@ nav {
     .portfolio__projects--project {
       margin: 10px;
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.7);
-      transition: all 0.5s; }
+      transition: all 0.5s;
+      animation: slideIn 1s linear; }
       .portfolio__projects--project:hover {
         background-color: #f1c40f;
         transition: all 0.5s; }
@@ -244,6 +245,8 @@ nav {
       width: 150px;
       height: 150px;
       box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2); }
+      .team__people--person img.person:hover {
+        animation: pulse 3s infinite; }
     .team__people--person figcaption span {
       display: block;
       text-align: center; }

@@ -15,6 +15,7 @@
       margin: 10px;
       box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.7);
       transition: all 0.5s;
+      animation: slideIn 1s linear;
 
       &:hover {
         background-color: $color-primary;

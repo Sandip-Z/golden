@@ -22,7 +22,7 @@ header {
       text-align: center;
       font-size: 35px;
       margin-bottom: 10px;
-      animation: slideDown 0.5s linear;
+      animation: slideDown 1s linear;
     }
 
     h1 {
@@ -30,11 +30,11 @@ header {
       text-transform: capitalize;
       font-size: 60px;
       margin-bottom: 10px;
-      animation: fadeIn 1s linear;
+      animation: fadeIn 3s linear;
     }
 
     button {
-      animation: slideIn 0.3s linear;
+      animation: slideIn 0.5s linear;
     }
   }
 }

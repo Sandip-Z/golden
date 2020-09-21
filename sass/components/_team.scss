@@ -28,6 +28,9 @@
         width: 150px;
         height: 150px;
         box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2);
+        &:hover {
+          animation: pulse 3s infinite;
+        }
       }
       figcaption {
         // border: 1px solid red;
