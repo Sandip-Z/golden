@@ -334,6 +334,9 @@ nav {
     position: absolute;
     left: 50%;
     border-left: 2px solid #d5dde2; }
+    @media (max-width: 37.5em) {
+      .aboutus__throughline {
+        height: 3109px; } }
   .aboutus__story--description {
     width: 35%;
     padding: 50px;
@@ -341,12 +344,22 @@ nav {
     position: relative;
     top: -5px;
     text-align: center; }
+    @media (max-width: 37.5em) {
+      .aboutus__story--description {
+        padding-top: 50px;
+        width: 100%;
+        background-color: #f44336;
+        margin-top: 200px;
+        margin-bottom: 200px; } }
     .aboutus__story--description h5 {
       font-weight: bold;
       font-size: 22px; }
     .aboutus__story--description p {
       padding-top: 15px;
       color: goldenrod; }
+      @media (max-width: 37.5em) {
+        .aboutus__story--description p {
+          color: whitesmoke; } }
     .aboutus__story--description__empty {
       height: 185px; }
       .aboutus__story--description__empty figure {

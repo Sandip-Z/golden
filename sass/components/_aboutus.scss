@@ -12,6 +12,9 @@
     position: absolute;
     left: 50%;
     border-left: 2px solid $color-grey;
+    @include respond(phone) {
+      height: 3109px;
+    }
   }
 
   &__story {
@@ -22,6 +25,13 @@
       position: relative;
       top: -5px;
       text-align: center;
+      @include respond(phone) {
+        padding-top: 50px;
+        width: 100%;
+        background-color: #f44336;
+        margin-top: 200px;
+        margin-bottom: 200px;
+      }
       h5 {
         font-weight: bold;
         font-size: 22px;
@@ -30,6 +40,9 @@
       p {
         padding-top: 15px;
         color: $color-primary-dark;
+        @include respond(phone) {
+          color: $color-white;
+        }
       }
       &__empty {
         height: 185px;
@@ -37,6 +50,9 @@
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
+          @include respond(phone) {
+            // margin: 50px 0;
+          }
           p {
             flex-direction: column;
             background-color: $color-primary;
