@@ -4,11 +4,17 @@
   &:not(:last-child) {
     margin-bottom: $vertical-gutter;
   }
+  @include respond(phone) {
+    width: 100%;
+  }
   @include clearfix;
 
   [class^="col-"] {
     // background-color: orangered;
     float: left;
+    @include respond(phone) {
+      float: none;
+    }
     &:not(:last-child) {
       margin-right: $horizontal-gutter;
     }
@@ -20,6 +26,9 @@
 
   .col-1-of-2 {
     width: calc((100% - #{$horizontal-gutter}) / 2);
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   .col-1-of-3 {

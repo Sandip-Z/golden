@@ -91,18 +91,27 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 60px; }
+  @media (max-width: 37.5em) {
+    .row {
+      width: 100%; } }
   .row::after {
     content: "";
     display: table;
     clear: both; }
   .row [class^="col-"] {
     float: left; }
+    @media (max-width: 37.5em) {
+      .row [class^="col-"] {
+        float: none; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 80px; }
   .row .col-1-of-1 {
     width: 100%; }
   .row .col-1-of-2 {
     width: calc((100% - 80px) / 2); }
+    @media (max-width: 37.5em) {
+      .row .col-1-of-2 {
+        width: 100%; } }
   .row .col-1-of-3 {
     width: calc(((100% - 80px * 2) / 3)); }
   .row .col-2-of-3 {
@@ -331,6 +340,10 @@ nav {
   color: whitesmoke;
   padding: 100px;
   padding-top: 50px; }
+  @media (max-width: 37.5em) {
+    .contact {
+      background-size: cover;
+      padding: 0; } }
   .contact form {
     margin-top: 50px; }
     .contact form input,
