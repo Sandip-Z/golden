@@ -4,7 +4,9 @@
   padding: 0 100px;
   padding-top: 50px;
   margin-bottom: 0px;
-  @include respond(phone) {
+  position: relative;
+  z-index: 10;
+  @include respond(tab-port) {
     padding: 50px 50px 0 50px;
   }
   &__post-script {
@@ -23,15 +25,15 @@
     // border: 1px solid red;
     padding: 75px;
     display: flex;
-    justify-content: space-around;
-    @include respond(phone) {
+    justify-content: space-between;
+    @include respond(tab-port) {
       flex-direction: column;
       padding: 0;
       margin-top: 50px;
     }
     &--person {
       //   border: 5px dotted green;
-      @include respond(phone) {
+      @include respond(tab-port) {
         margin-bottom: 50px;
       }
       img.person {

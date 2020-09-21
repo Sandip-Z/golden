@@ -183,7 +183,7 @@ nav {
   .service__services {
     display: flex;
     justify-content: space-around; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .service__services {
         flex-direction: column; } }
     .service__services--item {
@@ -265,8 +265,10 @@ nav {
   margin: 50px auto;
   padding: 0 100px;
   padding-top: 50px;
-  margin-bottom: 0px; }
-  @media (max-width: 37.5em) {
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 10; }
+  @media (max-width: 56.25em) {
     .team {
       padding: 50px 50px 0 50px; } }
   .team__post-script {
@@ -282,13 +284,13 @@ nav {
   .team__people {
     padding: 75px;
     display: flex;
-    justify-content: space-around; }
-    @media (max-width: 37.5em) {
+    justify-content: space-between; }
+    @media (max-width: 56.25em) {
       .team__people {
         flex-direction: column;
         padding: 0;
         margin-top: 50px; } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .team__people--person {
         margin-bottom: 50px; } }
     .team__people--person img.person {
@@ -319,17 +321,23 @@ nav {
 
 .market {
   padding: 25px 100px; }
+  @media (max-width: 1100px) {
+    .market {
+      padding: 25px 50px; } }
   .market__row {
     display: flex;
     justify-content: space-around;
     align-items: center; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .market__row {
         flex-direction: column; } }
+    @media (max-width: 1100px) {
+      .market__row {
+        justify-content: space-between; } }
     .market__row--org img {
       width: 150px !important;
       filter: grayscale(1); }
-      @media (max-width: 37.5em) {
+      @media (max-width: 56.25em) {
         .market__row--org img {
           margin: 30px; } }
 
@@ -362,15 +370,15 @@ nav {
   .aboutus__stories {
     margin-top: 100px; }
   .aboutus__throughline {
-    height: 951px;
+    height: 1380px;
     width: 15px;
     position: absolute;
     left: 50%;
     border-left: 2px solid #d5dde2;
     z-index: 0; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .aboutus__throughline {
-        height: 2883px; } }
+        height: 4000px; } }
   .aboutus__story--description {
     width: 35%;
     padding: 50px;
@@ -378,7 +386,7 @@ nav {
     position: relative;
     top: -5px;
     text-align: center; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .aboutus__story--description {
         padding-top: 50px;
         width: 100%;
@@ -391,7 +399,7 @@ nav {
     .aboutus__story--description p {
       padding-top: 15px;
       color: goldenrod; }
-      @media (max-width: 37.5em) {
+      @media (max-width: 56.25em) {
         .aboutus__story--description p {
           color: whitesmoke; } }
     .aboutus__story--description__empty {
