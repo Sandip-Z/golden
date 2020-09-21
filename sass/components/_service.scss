@@ -1,16 +1,25 @@
 .service {
   margin: 50px auto;
   padding: 0 100px;
+  @include respond(phone) {
+    padding: 0 50px;
+  }
   //   background-color: rgb(185, 142, 142);
 
   &__services {
     display: flex;
     justify-content: space-around;
+    @include respond(phone) {
+      flex-direction: column;
+    }
     // border: 1px solid red;
 
     &--item {
       //   border: 1px solid green;
       padding: 50px;
+      @include respond(phone) {
+        padding: 25px 0px;
+      }
       img {
         display: flex;
         margin: auto;

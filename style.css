@@ -168,11 +168,20 @@ nav {
 .service {
   margin: 50px auto;
   padding: 0 100px; }
+  @media (max-width: 37.5em) {
+    .service {
+      padding: 0 50px; } }
   .service__services {
     display: flex;
     justify-content: space-around; }
+    @media (max-width: 37.5em) {
+      .service__services {
+        flex-direction: column; } }
     .service__services--item {
       padding: 50px; }
+      @media (max-width: 37.5em) {
+        .service__services--item {
+          padding: 25px 0px; } }
       .service__services--item img {
         display: flex;
         margin: auto;
