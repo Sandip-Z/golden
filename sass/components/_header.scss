@@ -23,6 +23,9 @@ header {
       font-size: 35px;
       margin-bottom: 10px;
       animation: slideDown 1s linear;
+      @include respond(phone) {
+        font-size: 32px;
+      }
     }
 
     h1 {
@@ -30,11 +33,18 @@ header {
       text-transform: capitalize;
       font-size: 60px;
       margin-bottom: 10px;
+      text-align: center;
       animation: fadeIn 3s linear;
+      @include respond(phone) {
+        font-size: 18px;
+      }
     }
 
     button {
       animation: slideIn 0.5s linear;
+      @include respond(phone) {
+        margin: 25px auto;
+      }
     }
   }
 }

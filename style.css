@@ -132,14 +132,24 @@ header {
       font-size: 35px;
       margin-bottom: 10px;
       animation: slideDown 1s linear; }
+      @media (max-width: 37.5em) {
+        header .header h2 {
+          font-size: 32px; } }
     header .header h1 {
       color: whitesmoke;
       text-transform: capitalize;
       font-size: 60px;
       margin-bottom: 10px;
+      text-align: center;
       animation: fadeIn 3s linear; }
+      @media (max-width: 37.5em) {
+        header .header h1 {
+          font-size: 18px; } }
     header .header button {
       animation: slideIn 0.5s linear; }
+      @media (max-width: 37.5em) {
+        header .header button {
+          margin: 25px auto; } }
 
 nav {
   display: flex;
