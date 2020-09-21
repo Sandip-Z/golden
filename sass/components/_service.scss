@@ -9,7 +9,7 @@
   &__services {
     display: flex;
     justify-content: space-around;
-    @include respond(phone) {
+    @include respond(tab-port) {
       flex-direction: column;
     }
     // border: 1px solid red;
